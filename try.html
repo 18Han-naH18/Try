@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.header {
+  background-color: #f5e1c6;
+  padding: 100px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #b58b48;
+  color: black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color:  #f5e1c6;
+  font-family:Italic;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color:  #f5e1c6;
+}
+
+#navbar a.display {
+  color: black;
+  font-size: 20px;
+}
+
+.content {
+  padding: 16px;
+  font-family:Italic;
+  background-color: #f5e1c6;
+  
+}
+
+.dryrun {
+  padding: 16px;
+  background-color: #f5e1c6;
+  color: #b58b48;
+  font-family:Italic;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header" id="home" >
+  <b><i><h1 style="font-family:Italic;font-size:100px;">Vellichor</h1></i></b>
+  <p style="font-family:Italic;font-size:25px;">Our workshop aims to make people who like writing be more creative and express their talent through writing stories, novels, etc. The workshop will have a separate place where person’s who like writing could make their stories. It would also have a place where people can read those stories and appreciate the talent of the underrated writers. Our workshop will have the section for the stories of the attendees and will also have some stories from the popular authors.</p>
+</div>
+
+<div id="navbar">
+  <b>
+  <a class="display" href="#home">Vellichor</a>
+  <a href="#test">Usability Test</a>
+  <a href="#dryrun">Dry Run</a>
+  <a href="#Codes">Codes</a> </b>
+</div>
+
+<div class="content" id="test">
+ <center><br><br><br><br><br> <h3 > Do you like reading books? or possibly writing stories?</h3>
+  <h4> If yes, then this is the perfect workshop for you!</h4></center>
+<center> <style>
+.btn {
+  border: none;
+  background-color: #b58b48;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* White */
+.warning {
+  color: #f5e1c6;
+}
+
+.warning:hover {
+  background: #ffffff;
+  color: black;
+}
+</style>
+<b><a href="https://forms.gle/Leuv2Nfk46K5FTW88"><font style ="font-family:georgia,garamond,serif;font-size:100px;"><button class="btn warning">TRY ANSWERING THE USABILITY TEST QUESTION</button></font></a></b>
+  <h3>OR</h3> </center>
+  <center> <style>
+.btn {
+  border: none;
+  background-color: #b58b48;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* White */
+.warning {
+  color: #f5e1c6;
+}
+
+.warning:hover {
+  background: #ffffff;
+  color: black;
+}
+</style>
+<b><a href="https://docs.google.com/spreadsheets/d/1_sb5mtedG-nQ1UxeSSaiou8cFqbemRWabmFbty8cedU/edit?usp=sharing"><font style ="font-family:georgia,garamond,serif;font-size:100px;"><button class="btn warning">SEE THE RESULTS in GSHEET</button></font></a></b>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<b><a href="file:///C:/Users/EMMAX/Downloads/Vellichor/results.html"><font style ="font-family:georgia,garamond,serif;font-size:100px;"><button class="btn warning">SEE THE RESULTS</button></font></a></b>
+</center> <br><br><br><br><br><br>
+</div>
+
+ <div class="dryrun">
+   
+    
+<center>
+  <h1 id="dryrun"><b>Our Workshop's</b></h1>
+        <h2 class="w3-text-grey"><b>Dry run</b></h2>
+        
+        <iframe width="750" height="550" src="https://www.youtube.com/embed/rrFFITk_pBg">
+</iframe></center>
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</div>
+
+
+</body>
+</html>
